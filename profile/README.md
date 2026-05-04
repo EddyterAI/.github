@@ -20,6 +20,10 @@
   <a href="https://discord.com/channels/1457444571104542803/1457444572081819690"><img src="https://img.shields.io/badge/discord-join-5865F2" alt="Discord"></a>
 </p>
 
+<p align="center">
+  ▶️ <b><a href="https://youtu.be/oNHBa-DImZc">Watch: What is Eddyter? (90 seconds)</a></b> &nbsp;·&nbsp; <b><a href="https://youtu.be/5lTjRFjUWgs">Watch: Integrate Eddyter in 30 minutes</a></b>
+</p>
+
 ---
 
 ## Why teams choose Eddyter
@@ -43,26 +47,27 @@
 
 ## Quick start
 
+### 1. Get your API key
+
+[Grab a free API key →](https://eddyter.com/user/license-key)
+
+### 2. Install
+
 ```bash
 npm install eddyter
 ```
 
+### 3. Integrate
+
 ```tsx
-import {
-  ConfigurableEditorWithAuth,
-  EditorProvider,
-  defaultEditorConfig,
-} from "eddyter";
+import { ConfigurableEditorWithAuth, EditorProvider } from "eddyter";
 import "eddyter/style.css";
 
 export default function App() {
   return (
-    <EditorProvider
-      defaultFontFamilies={defaultEditorConfig.defaultFontFamilies}
-      currentUser={{ id: "u1", name: "Akash", email: "akash@example.com" }}
-    >
+    <EditorProvider>
       <ConfigurableEditorWithAuth
-        apiKey={process.env.NEXT_PUBLIC_EDDYTER_API_KEY!}
+        apiKey={process.env.NEXT_PUBLIC_EDDYTER_API_KEY}
         onChange={(html) => console.log(html)}
         initialContent="<p>Start writing...</p>"
       />
