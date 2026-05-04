@@ -15,7 +15,7 @@
 
 <p align="center">
   <a href="https://eddyter.com"><img src="https://img.shields.io/badge/demo-eddyter.com-orange" alt="Live demo"></a>
-  <a href="https://www.cteditor.com/docs"><img src="https://img.shields.io/badge/docs-cteditor.com-blue" alt="Docs"></a>
+  <a href="https://eddyter.com/docs"><img src="https://img.shields.io/badge/docs-eddyter.com-blue" alt="Docs"></a>
   <a href="https://www.npmjs.com/package/eddyter"><img src="https://img.shields.io/npm/v/eddyter" alt="npm eddyter"></a>
   <a href="https://discord.com/channels/1457444571104542803/1457444572081819690"><img src="https://img.shields.io/badge/discord-join-5865F2" alt="Discord"></a>
 </p>
@@ -87,7 +87,7 @@ That's the full integration. AI, storage, and infra are handled for you.
 ## Resources
 
 - 🎮 [**Live demo**](https://eddyter.com) — try the editor without signing up
-- 📘 [**Documentation**](https://www.cteditor.com/docs) — full API reference and guides
+- 📘 [**Documentation**](https://eddyter.com/docs) — full API reference and guides
 - 💡 [**Examples**](https://github.com/EddyterAI/examples) — runnable starter projects
 - 🐛 [**Issues & feedback**](https://github.com/EddyterAI/eddyter/issues) — report bugs or request features
 - 💬 [**Discussions**](https://github.com/EddyterAI/eddyter/discussions) — community Q&A
