@@ -1,0 +1,31 @@
+name: 📘 Documentation
+description: Something in the docs or a README is missing, unclear or wrong.
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page link
+      placeholder: https://eddyter.com/docs/...
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: What kind of problem?
+      options:
+        - Missing information
+        - Unclear or confusing
+        - Incorrect or outdated
+        - Code example doesn't work
+        - Broken link
+        - Translation request
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What should change?
+    validations:
+      required: true

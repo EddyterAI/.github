@@ -1,0 +1,66 @@
+name: 🧩 Integration problem
+description: You followed the setup steps, but the editor doesn't load or behave correctly in your app.
+title: "[Integration]: "
+labels: ["integration", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening this, please check these common fixes:
+
+        - `import 'eddyter/style.css'` is included
+        - Your API key is valid and available in the browser (for example `NEXT_PUBLIC_` in Next.js)
+        - In the Next.js App Router, the editor is in a file with `'use client'`
+        - In a flex or grid layout, the editor's column has `min-width: 0`
+
+        > ⚠️ **Never paste your API key.** Replace it with `YOUR_API_KEY`.
+  - type: dropdown
+    id: stack
+    attributes:
+      label: Your stack
+      options:
+        - React (Vite / CRA)
+        - Next.js (App Router)
+        - Next.js (Pages Router)
+        - Remix / React Router
+        - Vue / Nuxt
+        - Angular
+        - Svelte / SvelteKit
+        - Laravel (Blade / Livewire)
+        - Laravel (Inertia)
+        - React Native
+        - Vanilla JS
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Package and framework versions
+      placeholder: "eddyter 1.4.28, Next.js 15.1, React 19"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's going wrong?
+      description: For example, "The toolbar has no styles", "Authentication fails", "window is not defined".
+    validations:
+      required: true
+  - type: textarea
+    id: code
+    attributes:
+      label: How you added the editor
+      render: tsx
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console or build errors
+      render: shell
+  - type: input
+    id: reproduction
+    attributes:
+      label: Reproduction link
+      placeholder: https://stackblitz.com/...

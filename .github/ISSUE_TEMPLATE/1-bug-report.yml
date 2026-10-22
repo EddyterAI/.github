@@ -1,0 +1,119 @@
+name: 🐛 Bug report
+description: Something in Eddyter isn't working as expected.
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug. Clear reports get fixed faster.
+
+        > ⚠️ **Never paste your API key.** Replace it with `YOUR_API_KEY`.
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      options:
+        - eddyter (React / Next.js)
+        - "@eddyter/vue"
+        - "@eddyter/angular"
+        - "@eddyter/svelte"
+        - "@eddyter/core"
+        - "@eddyter/react-native"
+        - eddyter/laravel
+        - eddyter-mcp
+        - Eddyter dashboard (eddyter.com)
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Package version
+      description: Run `npm ls eddyter` (or the package you use) to check.
+      placeholder: "1.4.28"
+    validations:
+      required: true
+  - type: input
+    id: framework
+    attributes:
+      label: Framework and version
+      placeholder: "Next.js 15.1 (App Router), React 19"
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Browsers affected
+      multiple: true
+      options:
+        - Chrome
+        - Edge
+        - Firefox
+        - Safari (macOS)
+        - Safari (iOS)
+        - Chrome (Android)
+        - React Native WebView
+        - Not browser-specific
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug. Screenshots or a short screen recording help a lot.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Add the editor with ...
+        2. Type ...
+        3. Click ...
+        4. See error
+    validations:
+      required: true
+  - type: input
+    id: reproduction
+    attributes:
+      label: Reproduction link
+      description: A StackBlitz, CodeSandbox or public repository that shows the bug. This is the fastest way to get a fix.
+      placeholder: https://stackblitz.com/...
+  - type: textarea
+    id: code
+    attributes:
+      label: Relevant code
+      description: The smallest code sample that shows the problem.
+      render: tsx
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console errors
+      description: Copy any errors from the browser console or terminal.
+      render: shell
+  - type: dropdown
+    id: plan
+    attributes:
+      label: Plan
+      description: Some features depend on your plan, so this helps us reproduce the bug.
+      options:
+        - Free
+        - Paid
+        - Not sure
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and this hasn't been reported.
+          required: true
+        - label: I tested with the latest version.
+          required: true
+        - label: I removed my API key and any private data from this report.
+          required: true
