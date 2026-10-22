@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Ask a question
+    url: https://github.com/EddyterAI/eddyter/discussions/categories/q-a
+    about: How-to questions get faster, searchable answers in Discussions.
+  - name: 📘 Read the documentation
+    url: https://eddyter.com/docs
+    about: Setup guides and the full API reference.
+  - name: 💡 Browse runnable examples
+    url: https://github.com/EddyterAI/examples
+    about: Starter projects for React, Next.js, Vue, Angular, Svelte, Laravel and more.
+  - name: 🔒 Report a security vulnerability
+    url: https://github.com/EddyterAI/eddyter/security/advisories/new
+    about: Please report security issues privately, never in a public issue.
+  - name: ✉️ Billing, licensing or enterprise
+    url: https://www.eddyter.com
+    about: Contact the team at support@eddyter.com.
